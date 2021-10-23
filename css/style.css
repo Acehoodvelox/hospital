@@ -411,7 +411,49 @@ footer{
     transform: scale(1.2);
 }
 
+/* Services Styles */
+.specialties-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 150px 0 30px 0;
+}
+.list-first ul{
+    border-top: 1px solid #dfdfdf;
+    padding: 10px 0 15px 0;
+    list-style: none;
+}
+
+/* Virtual Care Styles */
+.virtual-content{
+    padding: 150px 0 40px 0;
+}
+.v-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dfdfdf;
+    background-color: #d4d4d4;
+}
+.v-top h1{
+    color: #367574;
+}
+.v-bottom{
+    border: 1px solid #dfdfdf;
+    padding: 30px;
+}
+.v-sec h2{
+    margin: 5px 0;
+    color: #367574;
+}
+
 /* Mobile Styles */
+@media (max-width:1100px){
+    .specialties-content{
+        display: block;
+    }
+}
 @media (max-width:947px) {
     .max-width {
         padding: 0 50px;
