@@ -474,7 +474,7 @@ footer{
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        background: #fff;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
@@ -492,6 +492,7 @@ footer{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
+        color: #111;
     }
     .dropdown{
         transition: all 0.4s ease;
