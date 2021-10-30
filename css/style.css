@@ -228,7 +228,7 @@ html {
 /* Covid Section Styles */
 .portfolio-content {
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr 1fr;
@@ -244,6 +244,7 @@ html {
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 .p-box a{
     display: inline-block;
@@ -258,10 +259,26 @@ html {
     justify-content: space-evenly;
     align-items: center;
 }
+.text-img img{
+    margin-left: 15px;
+}
 .text-img .text{
     font-weight: 700;
-    font-size: 20px;
     color: #69dad8;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 75%;
+}
+.main-text{
+    height: 25%;
+}
+.image img{
+    display: inline-block;
+    border-radius: 12px;
 }
 
 /*Contact section styles */
@@ -449,6 +466,11 @@ footer{
 }
 
 /* Mobile Styles */
+@media (maxx-width:1168px) {
+    .portfolio-content{
+        height: 50vh;
+    }
+}
 @media (max-width:1100px){
     .specialties-content{
         display: block;
@@ -531,7 +553,7 @@ footer{
     }
     .portfolio-content{
         width: 100%;
-        height: 70vh;
+        height: 170vh;
         display: grid;
         grid-template-rows: auto auto auto;
         grid-template-columns: 1fr 1fr;
@@ -572,11 +594,15 @@ footer{
 @media (max-width:685px){
     .portfolio-content{
         width: 100%;
-        height: 120vh;
+        height: 210vh;
         display: grid;
         grid-template-rows: auto auto auto;
         grid-template-columns: 1fr;
         grid-gap: 15px;
+    }
+    .text-img .img img{
+        display: inline-block;
+        width: 50%;
     }
 }
 @media (max-width:617px){
