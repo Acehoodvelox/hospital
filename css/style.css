@@ -92,9 +92,9 @@ html {
     position: absolute;
     left: 0;
     top: calc(100% + 0px);
-    background-color: #333;
+    background-color: #ddd;
     padding: 14px 16px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
@@ -153,6 +153,10 @@ html {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
+}
+
+.bx-x{
+    color: #111;
 }
 
 .scroll-up-btn.show {
@@ -523,7 +527,7 @@ footer{
         position: relative;
         left: 0;
         top: calc(100% + 0px);
-        background-color: #333;
+        background-color: #ddd;
         padding: 14px 16px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         opacity: 0;
